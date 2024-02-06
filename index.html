@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="task-manager">
+        <h1>Task Manager</h1>
+        <div class="input-container">
+          <input type="text" id="taskInput" placeholder="Add new task" />
+          <input type="date" id="taskDate" />
+          <input
+            type="text"
+            id="taskDescription"
+            placeholder="Description"
+            maxlength="25"
+          />
+          <!-- Set maxlength to 25 -->
+          <button id="addTaskBtn">Add Task</button>
+        </div>
+        <h2 style="font-style: italic; color: #393646">Incomplete Tasks</h2>
+        <ul id="incompleteTasksList"></ul>
+        <h2 style="font-style: italic; color: #393646">Completed Tasks</h2>
+        <ul id="completedTasksList"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
